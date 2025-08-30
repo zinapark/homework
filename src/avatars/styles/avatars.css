@@ -1,1 +1,54 @@
-/* 여기에 스타일을 구현해 주세요 */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.box {
+  display: flow-root;
+}
+
+.wrapper {
+  float: top;
+  width: 350px;
+}
+
+.avatar-wrapper {
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.avatar-wrapper:nth-child(4n) {
+  margin-right: 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+.status-on,
+.status-off {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  left: 48px;
+  top: -20px;
+  border: 2px solid white;
+  z-index: 2;
+}
+
+.status-on {
+  background-color: #4cfe88;
+}
+
+.status-off {
+  background-color: #dbdbdb;
+}
